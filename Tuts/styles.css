@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+BR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+  font-family: "Poppins",sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, rgb(52, 243, 230), rgb(0, 67, 200));
+}
+
+.weather-app {
+  width: 500px;
+  height: 530px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(48, 132, 249,0.21);
+  overflow: hidden;
+}
+
+.weather-app .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+
+.top .input-field {
+  height: 40px;
+  width: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.top .input-field #location {
+  border: 1px solid #efefef;
+  padding: 5px 10px;
+  border-radius: 44px;
+  outline: none;
+  transition: 0.5s;
+  width: 0;
+  position: absolute;
+  opacity: 0;
+  left:400px;
+  z-index: 1;
+  color:rgb(0, 0, 23);
+  font-family: "Rubik",sans-serif;
+}
+
+.top .input-field #location::placeholder {
+  color:rgb(225, 224, 224);
+  font-family: "Rubik",sans-serif;
+}
+
+.weather-app .top .fa-bars {
+  margin: 30px;
+  font-size: 20px;
+  color:#fff;
+  cursor: pointer;
+}
+
+.weather-app .top .fa-magnifying-glass {
+  margin: 30px;
+  font-size: 20px;
+  color:#fff;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.weather-app .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.center .clouds {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: -50px;
+}
+
+.center .city {
+  font-size: 25px;
+  color:#fff;
+  margin-top: -55px;
+
+}
+
+.center .degrees {
+  font-size: 32px;
+  font-family: "Inter",sans-serif;
+  font-weight: 300;
+  color:#fff;
+}
+
+.center .humidity {
+  font-family: "Rubik",sans-serif;
+  color:#e9e5e5;
+  margin-top:10px;
+}
+
+.weather-app .bottom {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  width:100%;
+  overflow: hidden;
+}
+
+.bottom .weather-ui {
+  width: 150px;
+  height: 130px;
+  border-radius: 6px;
+  background-color: rgba(255, 250, 250,0.2);
+  margin: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bottom .weather-ui .icon__app {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.bottom .right-weather {
+  background-color: rgba(39, 75, 252, 0.951);
+}
+
+.bottom .weather-ui .weather__degrees {
+  font-family: "Rubik",sans-serif;
+  color:#fff;
+  margin-top: -10px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+BR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --grey:#edeef6;
+    --black:rgb(0,0,0);
+    --green:rgb(83, 200, 161);
+    --blue:rgb(0, 145, 255);
+    --darkblue:rgb(52, 103, 254);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

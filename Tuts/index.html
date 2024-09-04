@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/75d7c65c9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+     <div class="weather-app">
+      <div class="top">
+        <i class="fa-solid fa-bars"></i>
+        <div class="input-field">
+          <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>     
+          <input type="text" id="location" placeholder="Location"/>
+        </div>
+     </div>
+     <div class="center">
+        <img src="../Images/cloudicon2.png" class="clouds">
+        <p class="city">Florida</p>
+        <p class="degrees">12°C</p>
+        <p class="humidity">Humidty: </p>
+     </div>
+     <div class="bottom">
+      <div class="left-weather weather-ui">
+        <img src="../Images/cloudonlyicon.png" class="cloud__app icon__app"/>
+        <p class="weather__degrees">30&deg;C</p>
+      </div>
+      <div class="right-weather weather-ui">
+        <img src="../Images/sunicon.png" class="icon__app"/>
+        <p class="weather__degrees">25&deg;C</p>
+      </div>
+      <div class="right-weather weather-ui">
+        <img src="../Images/sunicon.png" class="icon__app"/>
+        <p class="weather__degrees">10&deg;C</p>
+      </div>
+     </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
